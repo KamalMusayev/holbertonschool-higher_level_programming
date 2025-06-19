@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or not roman_string:
         return 0
@@ -19,8 +20,6 @@ def roman_to_int(roman_string):
             result += current
         else:
             result -= current
-
-    # Add last symbol value
     result += roman_values.get(roman_string[-1], 0)
 
     return result
