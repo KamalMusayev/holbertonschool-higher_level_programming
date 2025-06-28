@@ -1,13 +1,13 @@
 #!/usr/bin/python3
-"""Function start from here!"""
-
+""" Pascal's Triangle """
 
 def pascal_triangle(n):
     """
-    Inside of function!
+    Inside of function
     """
-    if n<= 0:
+    if n <= 0:
         return []
+
     triangle = [[1]]
 
     for i in range(1, n):
